@@ -1,0 +1,209 @@
+{
+  "results": {
+    "android_hidden_ui": {
+      "files": [
+        {
+          "file_path": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/GetTransactions.java",
+          "match_lines": [
+            96,
+            96
+          ],
+          "match_position": [
+            21,
+            59
+          ],
+          "match_string": "                    recyclerView.setVisibility(View.GONE);"
+        },
+        {
+          "file_path": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/GetTransactions.java",
+          "match_lines": [
+            101,
+            101
+          ],
+          "match_position": [
+            21,
+            56
+          ],
+          "match_string": "                    emptyView.setVisibility(View.GONE);"
+        },
+        {
+          "file_path": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/PendingBeneficiary.java",
+          "match_lines": [
+            97,
+            97
+          ],
+          "match_position": [
+            29,
+            67
+          ],
+          "match_string": "                            recyclerView.setVisibility(View.GONE);"
+        },
+        {
+          "file_path": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/PendingBeneficiary.java",
+          "match_lines": [
+            102,
+            102
+          ],
+          "match_position": [
+            29,
+            64
+          ],
+          "match_string": "                            emptyView.setVisibility(View.GONE);"
+        },
+        {
+          "file_path": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/SendMoney.java",
+          "match_lines": [
+            150,
+            150
+          ],
+          "match_position": [
+            17,
+            52
+          ],
+          "match_string": "                send.setVisibility(View.INVISIBLE);"
+        },
+        {
+          "file_path": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/SendMoney.java",
+          "match_lines": [
+            155,
+            155
+          ],
+          "match_position": [
+            17,
+            52
+          ],
+          "match_string": "                send.setVisibility(View.INVISIBLE);"
+        },
+        {
+          "file_path": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/SendMoney.java",
+          "match_lines": [
+            160,
+            160
+          ],
+          "match_position": [
+            17,
+            52
+          ],
+          "match_string": "                send.setVisibility(View.INVISIBLE);"
+        },
+        {
+          "file_path": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ViewBeneficiary.java",
+          "match_lines": [
+            87,
+            87
+          ],
+          "match_position": [
+            29,
+            67
+          ],
+          "match_string": "                            recyclerView.setVisibility(View.GONE);"
+        },
+        {
+          "file_path": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ViewBeneficiary.java",
+          "match_lines": [
+            92,
+            92
+          ],
+          "match_position": [
+            29,
+            64
+          ],
+          "match_string": "                            emptyView.setVisibility(View.GONE);"
+        },
+        {
+          "file_path": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ViewBeneficiaryAdmin.java",
+          "match_lines": [
+            92,
+            92
+          ],
+          "match_position": [
+            29,
+            67
+          ],
+          "match_string": "                            recyclerView.setVisibility(View.GONE);"
+        },
+        {
+          "file_path": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ViewBeneficiaryAdmin.java",
+          "match_lines": [
+            97,
+            97
+          ],
+          "match_position": [
+            29,
+            64
+          ],
+          "match_string": "                            emptyView.setVisibility(View.GONE);"
+        }
+      ],
+      "metadata": {
+        "cwe": "CWE-919: Weaknesses in Mobile Applications",
+        "description": "Hidden elements in view can be used to hide data from user. But this data can be leaked. If the view contains sensitive data, it might still be accessible through memory inspection. A good practice is to clear sensitive data before hiding it.",
+        "masvs": "MSTG-STORAGE-7",
+        "owasp-mobile": "M1: Improper Platform Usage",
+        "reference": "https://github.com/MobSF/owasp-mstg/blob/master/Document/0x05d-Testing-Data-Storage.md#checking-for-sensitive-data-disclosure-through-the-user-interface-mstg-storage-7",
+        "severity": "ERROR"
+      }
+    },
+    "android_logging": {
+      "files": [
+        {
+          "file_path": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/BankLogin.java",
+          "match_lines": [
+            86,
+            88
+          ],
+          "match_position": [
+            29,
+            62
+          ],
+          "match_string": "                            String accessToken=obj.getString(\"accessToken\");\n                            SharedPreferences sharedPreferences = getSharedPreferences(\"jwt\", Context.MODE_PRIVATE);\n                            Log.d(\"accesstoken\",accessToken);"
+        },
+        {
+          "file_path": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/MainActivity.java",
+          "match_lines": [
+            136,
+            140
+          ],
+          "match_position": [
+            13,
+            65
+          ],
+          "match_string": "            JSONObject decryptedResponse = new JSONObject(decryptedString);\n//            String decryptedString = EncryptData.decrypt(\"GmdBWksdEwAZFAlLVEdDX1FKS0JtQU1DHggaBkNXQQFjTkdBTUMJBgMCFQUIFA5MXUFPDxUdBg4PCkNWY05HQU1DFAYaDwgDBlhTTkUSAgwfHQcJBk9rWkkTbRw=\");\n//            JSONObject decryptedResponse = new JSONObject(decryptedString);\n\n            Log.d(\"DECRYPTING: \", decryptedResponse.toString());"
+        },
+        {
+          "file_path": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/PendingBeneficiary.java",
+          "match_lines": [
+            64,
+            66
+          ],
+          "match_position": [
+            29,
+            88
+          ],
+          "match_string": "                            JSONObject decryptedResponse = new JSONObject(EncryptDecrypt.decrypt(response.get(\"enc_data\").toString()));\n\n                            Log.d(\"Pending Beneficiary\", decryptedResponse.toString());"
+        },
+        {
+          "file_path": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/SendMoney.java",
+          "match_lines": [
+            98,
+            99
+          ],
+          "match_position": [
+            25,
+            75
+          ],
+          "match_string": "                        JSONObject decryptedResponse =  new JSONObject(EncryptDecrypt.decrypt(response.get(\"enc_data\").toString()));\n                        Log.d(\"Send Money\", decryptedResponse.toString());"
+        }
+      ],
+      "metadata": {
+        "cwe": "CWE-532: Insertion of Sensitive Information into Log File",
+        "description": "The App logs information. Please ensure that sensitive information is never logged.",
+        "masvs": "MSTG-STORAGE-3",
+        "owasp-mobile": "M1: Improper Platform Usage",
+        "reference": "https://github.com/MobSF/owasp-mstg/blob/master/Document/0x05d-Testing-Data-Storage.md#logs",
+        "severity": "INFO"
+      }
+    }
+  },
+  "errors": []
+}

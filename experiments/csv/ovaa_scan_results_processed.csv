@@ -1,0 +1,5 @@
+vulnerability,file_path,description,label
+android_logging,dataset/ovaa/app/src/main/java/oversecured/ovaa/activities/LoginActivity.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/ovaa/app/src/main/java/oversecured/ovaa/activities/LoginActivity.java,The App logs information. Please ensure that sensitive information is never logged.,0
+aes_ecb_mode_default,dataset/ovaa/app/src/main/java/oversecured/ovaa/utils/WeakCrypto.java,"Calling Cipher.getInstance(""AES"") will return AES ECB mode by default. ECB mode is known to be weak as it results in the same ciphertext for identical blocks of plaintext.",0
+aes_hardcoded_key,dataset/ovaa/app/src/main/java/oversecured/ovaa/utils/WeakCrypto.java,Hardcoded encryption key makes AES symmetric encryption useless. An attacker can easily reverse engineer the application and recover the keys.,0

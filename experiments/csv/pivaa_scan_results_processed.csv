@@ -1,0 +1,51 @@
+vulnerability,file_path,description,label
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/AboutActivity.java,The App logs information. Please ensure that sensitive information is never logged.,1
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/AboutActivity.java,The App logs information. Please ensure that sensitive information is never logged.,1
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/AboutActivity.java,The App logs information. Please ensure that sensitive information is never logged.,1
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/AboutActivity.java,The App logs information. Please ensure that sensitive information is never logged.,1
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/ContentProviderActivity.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/DatabaseActivity.java,The App logs information. Please ensure that sensitive information is never logged.,1
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/MainActivity.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/MainActivity.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/MainActivity.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/Authentication.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/Authentication.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/Authentication.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/Authentication.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/Authentication.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/Authentication.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/Authentication.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/Authentication.java,The App logs information. Please ensure that sensitive information is never logged.,1
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/Authentication.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/Authentication.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/Authentication.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/Authentication.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/Authentication.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/Authentication.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/Encryption.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/Encryption.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/LoadCode.java,The App logs information. Please ensure that sensitive information is never logged.,1
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/LoadCode.java,The App logs information. Please ensure that sensitive information is never logged.,1
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/LoadCode.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/LoadCode.java,The App logs information. Please ensure that sensitive information is never logged.,1
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/VulnerableReceiver.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/VulnerableReceiver.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/database/DatabaseHelper.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/database/DatabaseHelper.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/database/DatabaseHelper.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/database/DatabaseHelper.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/database/DatabaseHelper.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/database/DatabaseHelper.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/database/DatabaseHelper.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/pivaa/app/src/main/java/org/apache/commons/codec/cli/Digest.java,The App logs information. Please ensure that sensitive information is never logged.,1
+aes_ecb_mode,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/Encryption.java,The App uses ECB mode in Cryptographic encryption algorithm. ECB mode is known to be weak as it results in the same ciphertext for identical blocks of plaintext.,0
+aes_ecb_mode,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/Encryption.java,The App uses ECB mode in Cryptographic encryption algorithm. ECB mode is known to be weak as it results in the same ciphertext for identical blocks of plaintext.,0
+cbc_padding_oracle,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/Encryption.java,The App uses the encryption mode CBC with PKCS5/PKCS7 padding. This configuration is vulnerable to padding oracle attacks.,0
+cbc_static_iv,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/Encryption.java,The IV for AES CBC mode should be random. A static IV makes the ciphertext vulnerable to Chosen Plaintext Attack.,0
+object_deserialization,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/ObjectSerialization.java,"Found object deserialization using ObjectInputStream. Deserializing entire Java objects is dangerous because malicious actors can create Java object streams with unintended consequences. Ensure that the objects being deserialized are not user-controlled. Consider using HMACs to sign the data stream to make sure it is not tampered with, or consider only  transmitting object fields and populating a new object.
+",0
+accept_self_signed_certificate,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/API.java,Insecure Implementation of SSL. Trusting all the certificates or accepting self signed certificates is a critical Security Hole. This application is vulnerable to MITM attacks.,0
+accept_self_signed_certificate,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/handlers/API.java,Insecure Implementation of SSL. Trusting all the certificates or accepting self signed certificates is a critical Security Hole. This application is vulnerable to MITM attacks.,0
+webview_external_storage,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/BroadcastReceiverActivity.java,WebView load files from external storage. Files in external storage can be modified by any application.,0
+webview_set_allow_file_access,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/BroadcastReceiverActivity.java,"WebView File System Access is enabled. An attacker able to inject script into a WebView, could exploit the opportunity to access local resources.",0
+webview_set_allow_file_access,dataset/pivaa/app/src/main/java/com/htbridge/pivaa/WebviewActivity.java,"WebView File System Access is enabled. An attacker able to inject script into a WebView, could exploit the opportunity to access local resources.",0

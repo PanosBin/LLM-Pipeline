@@ -1,0 +1,16 @@
+vulnerability,file_path,description,label
+android_hidden_ui,dataset/damnvulnerablebank/GetTransactions.java,Hidden elements in view can be used to hide data from user. But this data can be leaked.,1
+android_hidden_ui,dataset/damnvulnerablebank/GetTransactions.java,Hidden elements in view can be used to hide data from user. But this data can be leaked.,1
+android_hidden_ui,dataset/damnvulnerablebank/PendingBeneficiary.java,Hidden elements in view can be used to hide data from user. But this data can be leaked.,1
+android_hidden_ui,dataset/damnvulnerablebank/PendingBeneficiary.java,Hidden elements in view can be used to hide data from user. But this data can be leaked.,1
+android_hidden_ui,dataset/damnvulnerablebank/SendMoney.java,Hidden elements in view can be used to hide data from user. But this data can be leaked.,1
+android_hidden_ui,dataset/damnvulnerablebank/SendMoney.java,Hidden elements in view can be used to hide data from user. But this data can be leaked.,1
+android_hidden_ui,dataset/damnvulnerablebank/SendMoney.java,Hidden elements in view can be used to hide data from user. But this data can be leaked.,1
+android_hidden_ui,dataset/damnvulnerablebank/ViewBeneficiary.java,Hidden elements in view can be used to hide data from user. But this data can be leaked.,1
+android_hidden_ui,dataset/damnvulnerablebank/ViewBeneficiary.java,Hidden elements in view can be used to hide data from user. But this data can be leaked.,1
+android_hidden_ui,dataset/damnvulnerablebank/ViewBeneficiaryAdmin.java,Hidden elements in view can be used to hide data from user. But this data can be leaked.,1
+android_hidden_ui,dataset/damnvulnerablebank/ViewBeneficiaryAdmin.java,Hidden elements in view can be used to hide data from user. But this data can be leaked.,1
+android_logging,dataset/damnvulnerablebank/BankLogin.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/damnvulnerablebank/MainActivity.java,The App logs information. Please ensure that sensitive information is never logged.,1
+android_logging,dataset/damnvulnerablebank/PendingBeneficiary.java,The App logs information. Please ensure that sensitive information is never logged.,0
+android_logging,dataset/damnvulnerablebank/SendMoney.java,The App logs information. Please ensure that sensitive information is never logged.,0

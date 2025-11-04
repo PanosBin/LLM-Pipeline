@@ -1,0 +1,742 @@
+[
+  {
+    "cluster_id": 1,
+    "size": 30,
+    "methods": [
+      {
+        "name": "useAppContext",
+        "class": "ExampleInstrumentedTest",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/androidTest/java/com/app/damnvulnerablebank/ExampleInstrumentedTest.java"
+      },
+      {
+        "name": "onCreate",
+        "class": "ViewBeneficiary",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ViewBeneficiary.java"
+      },
+      {
+        "name": "onCreateViewHolder",
+        "class": "Padapter",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Padapter.java"
+      },
+      {
+        "name": "onBindViewHolder",
+        "class": "Padapter",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Padapter.java"
+      },
+      {
+        "name": "getHeaders",
+        "class": "Myprofile",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Myprofile.java"
+      },
+      {
+        "name": "onCreate",
+        "class": "ApproveBeneficiary",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ApproveBeneficiary.java"
+      },
+      {
+        "name": "getHeaders",
+        "class": "ApproveBeneficiary",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ApproveBeneficiary.java"
+      },
+      {
+        "name": "checkRootMethod1",
+        "class": "RootUtil",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/RootUtil.java"
+      },
+      {
+        "name": "onClick",
+        "class": "MainActivity",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/MainActivity.java"
+      },
+      {
+        "name": "onResponse",
+        "class": "MainActivity",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/MainActivity.java"
+      },
+      {
+        "name": "onErrorResponse",
+        "class": "MainActivity",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/MainActivity.java"
+      },
+      {
+        "name": "onCreate",
+        "class": "GetTransactions",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/GetTransactions.java"
+      },
+      {
+        "name": "onClick",
+        "class": "Dashboard",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Dashboard.java"
+      },
+      {
+        "name": "logout",
+        "class": "Dashboard",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Dashboard.java"
+      },
+      {
+        "name": "onCreate",
+        "class": "Dashboard",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Dashboard.java"
+      },
+      {
+        "name": "onCreate",
+        "class": "PendingBeneficiary",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/PendingBeneficiary.java"
+      },
+      {
+        "name": "onItemClick",
+        "class": "PendingBeneficiary",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/PendingBeneficiary.java"
+      },
+      {
+        "name": "onCreateViewHolder",
+        "class": "Badapter",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Badapter.java"
+      },
+      {
+        "name": "onBindViewHolder",
+        "class": "Badapter",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Badapter.java"
+      },
+      {
+        "name": "onCreate",
+        "class": "ViewBeneficiaryAdmin",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ViewBeneficiaryAdmin.java"
+      },
+      {
+        "name": "onItemClick",
+        "class": "ViewBeneficiaryAdmin",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ViewBeneficiaryAdmin.java"
+      },
+      {
+        "name": "getHeaders",
+        "class": "AddBeneficiary",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/AddBeneficiary.java"
+      },
+      {
+        "name": "onCreateViewHolder",
+        "class": "Adapter",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Adapter.java"
+      },
+      {
+        "name": "onBindViewHolder",
+        "class": "Adapter",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Adapter.java"
+      },
+      {
+        "name": "onErrorResponse",
+        "class": "BankLogin",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/BankLogin.java"
+      },
+      {
+        "name": "getHeaders",
+        "class": "ViewBalance",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ViewBalance.java"
+      },
+      {
+        "name": "onCreate",
+        "class": "SendMoney",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/SendMoney.java"
+      },
+      {
+        "name": "getHeaders",
+        "class": "SendMoney",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/SendMoney.java"
+      },
+      {
+        "name": "onAuthenticationSucceeded",
+        "class": "SendMoney",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/SendMoney.java"
+      },
+      {
+        "name": "run",
+        "class": "SplashScreen",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/SplashScreen.java"
+      }
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "size": 7,
+    "methods": [
+      {
+        "name": "addition_isCorrect",
+        "class": "ExampleUnitTest",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/test/java/com/app/damnvulnerablebank/ExampleUnitTest.java"
+      },
+      {
+        "name": "getItemCount",
+        "class": "Padapter",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Padapter.java"
+      },
+      {
+        "name": "isDeviceRooted",
+        "class": "RootUtil",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/RootUtil.java"
+      },
+      {
+        "name": "getItemCount",
+        "class": "Badapter",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Badapter.java"
+      },
+      {
+        "name": "getItemCount",
+        "class": "Adapter",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Adapter.java"
+      },
+      {
+        "name": "onAuthenticationFailed",
+        "class": "SendMoney",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/SendMoney.java"
+      },
+      {
+        "name": "logcat",
+        "class": "EmulatorDetectortest",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/EmulatorDetectortest.java"
+      }
+    ]
+  },
+  {
+    "cluster_id": 3,
+    "size": 18,
+    "methods": [
+      {
+        "name": "viewBeneficiaries",
+        "class": "ViewBeneficiary",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ViewBeneficiary.java"
+      },
+      {
+        "name": "onCreate",
+        "class": "Myprofile",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Myprofile.java"
+      },
+      {
+        "name": "approveBeneficiary",
+        "class": "ApproveBeneficiary",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ApproveBeneficiary.java"
+      },
+      {
+        "name": "resetPassword",
+        "class": "ResetPassword",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ResetPassword.java"
+      },
+      {
+        "name": "onCreate",
+        "class": "MainActivity",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/MainActivity.java"
+      },
+      {
+        "name": "healthCheck",
+        "class": "MainActivity",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/MainActivity.java"
+      },
+      {
+        "name": "extractRecords",
+        "class": "GetTransactions",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/GetTransactions.java"
+      },
+      {
+        "name": "getPendingBeneficiaries",
+        "class": "PendingBeneficiary",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/PendingBeneficiary.java"
+      },
+      {
+        "name": "register",
+        "class": "RegisterBank",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/RegisterBank.java"
+      },
+      {
+        "name": "viewBeneficiaries",
+        "class": "ViewBeneficiaryAdmin",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ViewBeneficiaryAdmin.java"
+      },
+      {
+        "name": "addBeneficiary",
+        "class": "AddBeneficiary",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/AddBeneficiary.java"
+      },
+      {
+        "name": "bankLogin",
+        "class": "BankLogin",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/BankLogin.java"
+      },
+      {
+        "name": "onCreate",
+        "class": "ViewBalance",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ViewBalance.java"
+      },
+      {
+        "name": "sendMoney",
+        "class": "SendMoney",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/SendMoney.java"
+      },
+      {
+        "name": "Biometrics",
+        "class": "SendMoney",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/SendMoney.java"
+      },
+      {
+        "name": "isEmulator",
+        "class": "EmulatorDetectortest",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/EmulatorDetectortest.java"
+      },
+      {
+        "name": "onCreate",
+        "class": "SplashScreen",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/SplashScreen.java"
+      },
+      {
+        "name": "onCreate",
+        "class": "CurrencyRates",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/CurrencyRates.java"
+      }
+    ]
+  },
+  {
+    "cluster_id": 4,
+    "size": 19,
+    "methods": [
+      {
+        "name": "onResponse",
+        "class": "ViewBeneficiary",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ViewBeneficiary.java"
+      },
+      {
+        "name": "onClick",
+        "class": "Padapter",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Padapter.java"
+      },
+      {
+        "name": "onClick",
+        "class": "ViewHolder",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Padapter.java"
+      },
+      {
+        "name": "onResponse",
+        "class": "Myprofile",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Myprofile.java"
+      },
+      {
+        "name": "onResponse",
+        "class": "ApproveBeneficiary",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ApproveBeneficiary.java"
+      },
+      {
+        "name": "checkRootMethod3",
+        "class": "RootUtil",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/RootUtil.java"
+      },
+      {
+        "name": "onResponse",
+        "class": "ResetPassword",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ResetPassword.java"
+      },
+      {
+        "name": "onBackPressed",
+        "class": "MainActivity",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/MainActivity.java"
+      },
+      {
+        "name": "onResponse",
+        "class": "GetTransactions",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/GetTransactions.java"
+      },
+      {
+        "name": "onBackPressed",
+        "class": "Dashboard",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Dashboard.java"
+      },
+      {
+        "name": "onResponse",
+        "class": "PendingBeneficiary",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/PendingBeneficiary.java"
+      },
+      {
+        "name": "onResponse",
+        "class": "RegisterBank",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/RegisterBank.java"
+      },
+      {
+        "name": "onClick",
+        "class": "Badapter",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Badapter.java"
+      },
+      {
+        "name": "onClick",
+        "class": "ViewHolder",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Badapter.java"
+      },
+      {
+        "name": "onResponse",
+        "class": "ViewBeneficiaryAdmin",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ViewBeneficiaryAdmin.java"
+      },
+      {
+        "name": "onResponse",
+        "class": "AddBeneficiary",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/AddBeneficiary.java"
+      },
+      {
+        "name": "onResponse",
+        "class": "BankLogin",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/BankLogin.java"
+      },
+      {
+        "name": "onResponse",
+        "class": "ViewBalance",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ViewBalance.java"
+      },
+      {
+        "name": "onResponse",
+        "class": "SendMoney",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/SendMoney.java"
+      }
+    ]
+  },
+  {
+    "cluster_id": 5,
+    "size": 10,
+    "methods": [
+      {
+        "name": "onErrorResponse",
+        "class": "ViewBeneficiary",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ViewBeneficiary.java"
+      },
+      {
+        "name": "onErrorResponse",
+        "class": "ApproveBeneficiary",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ApproveBeneficiary.java"
+      },
+      {
+        "name": "onErrorResponse",
+        "class": "ResetPassword",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ResetPassword.java"
+      },
+      {
+        "name": "onErrorResponse",
+        "class": "GetTransactions",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/GetTransactions.java"
+      },
+      {
+        "name": "onErrorResponse",
+        "class": "PendingBeneficiary",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/PendingBeneficiary.java"
+      },
+      {
+        "name": "onErrorResponse",
+        "class": "RegisterBank",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/RegisterBank.java"
+      },
+      {
+        "name": "onErrorResponse",
+        "class": "ViewBeneficiaryAdmin",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ViewBeneficiaryAdmin.java"
+      },
+      {
+        "name": "onErrorResponse",
+        "class": "AddBeneficiary",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/AddBeneficiary.java"
+      },
+      {
+        "name": "onErrorResponse",
+        "class": "SendMoney",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/SendMoney.java"
+      },
+      {
+        "name": "onAuthenticationError",
+        "class": "SendMoney",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/SendMoney.java"
+      }
+    ]
+  },
+  {
+    "cluster_id": 6,
+    "size": 8,
+    "methods": [
+      {
+        "name": "getHeaders",
+        "class": "ViewBeneficiary",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ViewBeneficiary.java"
+      },
+      {
+        "name": "checkRootMethod2",
+        "class": "RootUtil",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/RootUtil.java"
+      },
+      {
+        "name": "getHeaders",
+        "class": "ResetPassword",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ResetPassword.java"
+      },
+      {
+        "name": "getHeaders",
+        "class": "GetTransactions",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/GetTransactions.java"
+      },
+      {
+        "name": "operate",
+        "class": "EncryptDecrypt",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/EncryptDecrypt.java"
+      },
+      {
+        "name": "getHeaders",
+        "class": "PendingBeneficiary",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/PendingBeneficiary.java"
+      },
+      {
+        "name": "getHeaders",
+        "class": "ViewBeneficiaryAdmin",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ViewBeneficiaryAdmin.java"
+      },
+      {
+        "name": "getDeviceListing",
+        "class": "EmulatorDetectortest",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/EmulatorDetectortest.java"
+      }
+    ]
+  },
+  {
+    "cluster_id": 7,
+    "size": 11,
+    "methods": [
+      {
+        "name": "onItemClick",
+        "class": "ViewBeneficiary",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ViewBeneficiary.java"
+      },
+      {
+        "name": "getFromaccnt",
+        "class": "TransactionRecords",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/TransactionRecords.java"
+      },
+      {
+        "name": "getToaccnt",
+        "class": "TransactionRecords",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/TransactionRecords.java"
+      },
+      {
+        "name": "getAmount",
+        "class": "TransactionRecords",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/TransactionRecords.java"
+      },
+      {
+        "name": "onErrorResponse",
+        "class": "Myprofile",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Myprofile.java"
+      },
+      {
+        "name": "getBeneficiaryAccount",
+        "class": "BeneficiaryRecords",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/BeneficiaryRecords.java"
+      },
+      {
+        "name": "getIsApproved",
+        "class": "BeneficiaryRecords",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/BeneficiaryRecords.java"
+      },
+      {
+        "name": "onErrorResponse",
+        "class": "ViewBalance",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ViewBalance.java"
+      },
+      {
+        "name": "getAccountNumber",
+        "class": "PendingBeneficiaryRecords",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/PendingBeneficiaryRecords.java"
+      },
+      {
+        "name": "getBeneficiaryAccountNumber",
+        "class": "PendingBeneficiaryRecords",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/PendingBeneficiaryRecords.java"
+      },
+      {
+        "name": "getId",
+        "class": "PendingBeneficiaryRecords",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/PendingBeneficiaryRecords.java"
+      }
+    ]
+  },
+  {
+    "cluster_id": 8,
+    "size": 3,
+    "methods": [
+      {
+        "name": "onItemClick",
+        "class": "Padapter",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Padapter.java"
+      },
+      {
+        "name": "onItemClick",
+        "class": "Badapter",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Badapter.java"
+      },
+      {
+        "name": "fridaCheck",
+        "class": "FridaCheckJNI",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/FridaCheckJNI.java"
+      }
+    ]
+  },
+  {
+    "cluster_id": 9,
+    "size": 12,
+    "methods": [
+      {
+        "name": "setOnItemClickListener",
+        "class": "Padapter",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Padapter.java"
+      },
+      {
+        "name": "setFromaccnt",
+        "class": "TransactionRecords",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/TransactionRecords.java"
+      },
+      {
+        "name": "setToaccnt",
+        "class": "TransactionRecords",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/TransactionRecords.java"
+      },
+      {
+        "name": "setAmount",
+        "class": "TransactionRecords",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/TransactionRecords.java"
+      },
+      {
+        "name": "setBeneficiaryAccount",
+        "class": "BeneficiaryRecords",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/BeneficiaryRecords.java"
+      },
+      {
+        "name": "setIsApproved",
+        "class": "BeneficiaryRecords",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/BeneficiaryRecords.java"
+      },
+      {
+        "name": "encrypt",
+        "class": "EncryptDecrypt",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/EncryptDecrypt.java"
+      },
+      {
+        "name": "decrypt",
+        "class": "EncryptDecrypt",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/EncryptDecrypt.java"
+      },
+      {
+        "name": "setOnItemClickListener",
+        "class": "Badapter",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Badapter.java"
+      },
+      {
+        "name": "setAccountNumber",
+        "class": "PendingBeneficiaryRecords",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/PendingBeneficiaryRecords.java"
+      },
+      {
+        "name": "setBeneficiaryAccountNumber",
+        "class": "PendingBeneficiaryRecords",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/PendingBeneficiaryRecords.java"
+      },
+      {
+        "name": "setId",
+        "class": "PendingBeneficiaryRecords",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/PendingBeneficiaryRecords.java"
+      }
+    ]
+  },
+  {
+    "cluster_id": 10,
+    "size": 18,
+    "methods": [
+      {
+        "name": "onCreate",
+        "class": "ResetPassword",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/ResetPassword.java"
+      },
+      {
+        "name": "loginPage",
+        "class": "MainActivity",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/MainActivity.java"
+      },
+      {
+        "name": "signupPage",
+        "class": "MainActivity",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/MainActivity.java"
+      },
+      {
+        "name": "addBeneficiary",
+        "class": "Dashboard",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Dashboard.java"
+      },
+      {
+        "name": "myprofile",
+        "class": "Dashboard",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Dashboard.java"
+      },
+      {
+        "name": "viewbalance",
+        "class": "Dashboard",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Dashboard.java"
+      },
+      {
+        "name": "viewTransactions",
+        "class": "Dashboard",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Dashboard.java"
+      },
+      {
+        "name": "viewBeneficiaryAdmin",
+        "class": "Dashboard",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Dashboard.java"
+      },
+      {
+        "name": "getPendingBeneficiaries",
+        "class": "Dashboard",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Dashboard.java"
+      },
+      {
+        "name": "viewMyBeneficiaries",
+        "class": "Dashboard",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Dashboard.java"
+      },
+      {
+        "name": "resetPassword",
+        "class": "Dashboard",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Dashboard.java"
+      },
+      {
+        "name": "getCurrencyRates",
+        "class": "Dashboard",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/Dashboard.java"
+      },
+      {
+        "name": "backToMain",
+        "class": "RegisterBank",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/RegisterBank.java"
+      },
+      {
+        "name": "onCreate",
+        "class": "RegisterBank",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/RegisterBank.java"
+      },
+      {
+        "name": "onCreate",
+        "class": "AddBeneficiary",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/AddBeneficiary.java"
+      },
+      {
+        "name": "backToMain",
+        "class": "BankLogin",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/BankLogin.java"
+      },
+      {
+        "name": "onCreate",
+        "class": "BankLogin",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/BankLogin.java"
+      },
+      {
+        "name": "shouldOverrideUrlLoading",
+        "class": "WebViewClientImpl",
+        "file": "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/data/apps/Damn-Vulnerable-Bank/DamnVulnerableBank/app/src/main/java/com/app/damnvulnerablebank/CurrencyRates.java"
+      }
+    ]
+  }
+]
