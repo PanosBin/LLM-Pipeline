@@ -8,8 +8,9 @@ import subprocess
 
 # --- Imports ---
 from src.parsers.parsing import TreeSitterParser
-from src.clustering.clustering import cluster_methods_semantically
-from src.summarizing.summarizer import LlamaSummarizer
+from src.clustering.clustering import cluster_classes_semantically  # NEW: cluster classes
+from src.summarizing.enhanced_summarizer import EnhancedLlamaSummarizer  # NEW: enhanced summarizer
+from src.generate_results import generate_final_results
 
 # --- Logging setup ---
 logging.basicConfig(
@@ -84,12 +85,12 @@ def parse_codebase(source_dir: str) -> list:
     return parsed_files
 
 # ============================
-# 3. Cluster methods
+# 3. Cluster classes (NEW: Changed from methods to classes)
 # ============================
-def cluster_methods(parsed_files: list):
-    logger.info("Starting semantic clustering of methods...")
-    clusters, clusterer_obj = cluster_methods_semantically(parsed_files)
-    logger.info(f"Generated {len(clusters)} clusters.")
+def cluster_classes(parsed_files: list):
+    logger.info("Starting semantic clustering of classes...")
+    clusters, clusterer_obj = cluster_classes_semantically(parsed_files)
+    logger.info(f"Generated {len(clusters)} class clusters.")
     return clusters, clusterer_obj
 
 # ============================
@@ -140,24 +141,37 @@ def identify_vulnerable_methods(scan_results, parsed_files):
     return vulnerable_methods
 
 # ============================
-# 5. Generate summaries
+# 5. Generate summaries (NEW: Enhanced with method call analysis)
 # ============================
 def generate_summaries(clusters, vulnerable_methods):
     logger.info("Generating summaries for methods, classes, and clusters...")
-    summarizer = LlamaSummarizer()
+    logger.info("Using ENHANCED summarizer with method call analysis...")
+    summarizer = EnhancedLlamaSummarizer()
     summaries = {"clusters": {}, "classes": {}, "methods": {}}
+
+    # Generate cluster summaries (clusters now contain classes, not methods)
     for idx, cluster in enumerate(clusters):
-        summaries[f"cluster_{idx+1}"] = summarizer.summarize_cluster(cluster)
+        cluster_id = f"cluster_{idx+1}"
+        summaries["clusters"][cluster_id] = summarizer.summarize_cluster(cluster)
+        logger.info(f"Generated summary for {cluster_id} ({len(cluster)} classes)")
+
+    # Generate method and class summaries for vulnerable methods
     for vuln_info in vulnerable_methods:
         method = vuln_info["method"]
         java_class = vuln_info["class"]
         method_key = f"{java_class.name}.{method.name}"
+
+        # Method summary
         if method_key not in summaries["methods"]:
             summaries["methods"][method_key] = summarizer.summarize_code(method.code)
+
+        # Class summary WITH CONTEXT (NEW: analyzes method calls)
         class_key = java_class.name
         if class_key not in summaries["classes"]:
-            summaries["classes"][class_key] = summarizer.summarize_code(java_class.code)
-    logger.info("Summaries generated.")
+            summaries["classes"][class_key] = summarizer.summarize_class_with_context(java_class)
+            logger.info(f"Generated enhanced summary for class '{class_key}'")
+
+    logger.info("All summaries generated with method call context.")
     return summaries
 
 # ============================
@@ -218,29 +232,29 @@ def save_outputs(scan_results, parsed_files, clusters, summaries):
         json.dump(parsed_full, f, indent=2)
     logger.info("Saved full parsed files.")
     
-    # 3. Clusters
+    # 3. Clusters (NEW: now contains classes, not methods)
     clusters_data = []
     for idx, cluster in enumerate(clusters):
         # Flatten if nested lists detected
         if len(cluster) > 0 and isinstance(cluster[0], list):
             # flatten cluster
-            flat_cluster = [method for sublist in cluster for method in sublist]
+            flat_cluster = [cls for sublist in cluster for cls in sublist]
         else:
             flat_cluster = cluster
-        
+
         clusters_data.append({
             "cluster_id": idx+1,
             "size": len(cluster),
-            "methods": [
-                {"name": m.name,
-                 "class": getattr(m.parent, "name", "Unknown"),
-                 "file": getattr(m.parent.parent_file, "path", "Unknown")}
-                for m in cluster
+            "classes": [
+                {"name": cls.name,
+                 "file": getattr(cls.parent_file, "path", "Unknown"),
+                 "num_methods": len(cls.methods)}
+                for cls in flat_cluster
             ]
         })
     with open(os.path.join(OUTPUT_DIR, "clusters.json"), "w") as f:
         json.dump(clusters_data, f, indent=2)
-    logger.info("Saved clusters.")
+    logger.info("Saved class clusters.")
     
     # 4. Summaries
     with open(os.path.join(OUTPUT_DIR, "summaries.json"), "w") as f:
@@ -279,7 +293,8 @@ def main():
         logger.warning("No Java files found. Exiting.")
         return
 
-    clusters, clusterer_obj = cluster_methods_semantically(parsed_files)
+    # NEW: Cluster classes instead of methods
+    clusters, clusterer_obj = cluster_classes_semantically(parsed_files)
 
     vulnerable_methods = identify_vulnerable_methods(scan_results, parsed_files)
 
@@ -289,6 +304,11 @@ def main():
 
 
     save_outputs(scan_results, parsed_files, clusters, summaries)
+
+    # Generate final results.json (same as results_final.ipynb)
+    logger.info("Generating final results.json...")
+    final_results = generate_final_results(OUTPUT_DIR)
+
     logger.info("Pipeline completed successfully.")
 
 if __name__ == "__main__":
