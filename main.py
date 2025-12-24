@@ -117,13 +117,46 @@ def is_position_within_method(mobsf_position, mobsf_lines, method_pos):
 def identify_vulnerable_methods(scan_results, parsed_files):
     """Maps vulnerabilities to specific methods and classes"""
     vulnerable_methods = []
+
+    def normalize_path(path):
+        """Normalize path for better matching"""
+        return path.replace("\\", "/").lower()
+
+    def paths_match(mobsf_path, parsed_path):
+        """Check if two paths refer to the same file"""
+        mobsf_norm = normalize_path(mobsf_path)
+        parsed_norm = normalize_path(parsed_path)
+
+        # Get filename
+        mobsf_filename = mobsf_norm.split("/")[-1]
+        parsed_filename = parsed_norm.split("/")[-1]
+
+        # Must have same filename
+        if mobsf_filename != parsed_filename:
+            return False
+
+        # Check if one path contains the other's key components
+        # Extract package-like path (after java/ or kotlin/)
+        for anchor in ["/java/", "/kotlin/"]:
+            if anchor in mobsf_norm and anchor in parsed_norm:
+                mobsf_package = mobsf_norm.split(anchor)[-1]
+                parsed_package = parsed_norm.split(anchor)[-1]
+                return mobsf_package == parsed_package
+
+        # Fallback: check last few path components match
+        mobsf_parts = [p for p in mobsf_norm.split("/") if p][-5:]
+        parsed_parts = [p for p in parsed_norm.split("/") if p][-5:]
+
+        # Count matching tail components
+        matches = sum(1 for m, p in zip(reversed(mobsf_parts), reversed(parsed_parts)) if m == p)
+        return matches >= 3  # At least 3 components must match
+
     for result_key, vulnerability in scan_results.get("results", {}).items():
         for vuln_file in vulnerability.get("files", []):
-            mobsf_path = vuln_file.get("file_path")
-            relative_suffix = "/".join(mobsf_path.split("/")[-8:])
-            
+            mobsf_path = vuln_file.get("file_path", "")
+
             for parsed_file in parsed_files:
-                if relative_suffix in parsed_file.path or parsed_file.path.endswith(relative_suffix):
+                if paths_match(mobsf_path, parsed_file.path):
                     for java_class in parsed_file.classes:
                         for method in java_class.methods:
                             if is_position_within_method(
@@ -137,7 +170,16 @@ def identify_vulnerable_methods(scan_results, parsed_files):
                                     "file": parsed_file,
                                     "vulnerability": result_key
                                 })
+
     logger.info(f"Identified {len(vulnerable_methods)} vulnerable methods.")
+    if len(vulnerable_methods) == 0:
+        logger.warning("⚠️  No vulnerable methods found. Check path matching:")
+        if scan_results.get("results"):
+            sample_mobsf = list(scan_results["results"].values())[0]["files"][0]["file_path"]
+            sample_parsed = parsed_files[0].path if parsed_files else "No parsed files"
+            logger.warning(f"   MobSF path example: {sample_mobsf}")
+            logger.warning(f"   Parsed path example: {sample_parsed}")
+
     return vulnerable_methods
 
 # ============================
