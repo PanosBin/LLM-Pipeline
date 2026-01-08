@@ -82,12 +82,17 @@ class CodeBERTClassClustering:
 
     def cluster(self, classes: List[JavaClass]) -> None:
         logger.info(f"Starting class clustering on {len(classes)} classes...")
+        logger.info("Extracting code texts from classes...")
         code_texts = [cls.code for cls in classes]
+        logger.info(f"Generating embeddings for {len(code_texts)} classes...")
         embeddings = self.embedder.embed(code_texts)
+        logger.info("Converting embeddings to numpy array...")
         embeddings_np = embeddings.cpu().numpy()
 
+        logger.info(f"Running KMeans clustering with k={self.n_clusters}...")
         cluster_labels = self.kmeans.fit_predict(embeddings_np)
 
+        logger.info("Organizing classes into clusters...")
         clusters = {}
         for cls, label in zip(classes, cluster_labels):
             clusters.setdefault(label, []).append(cls)

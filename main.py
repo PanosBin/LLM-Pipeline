@@ -186,9 +186,14 @@ def identify_vulnerable_methods(scan_results, parsed_files):
 # 5. Generate summaries (NEW: Enhanced with method call analysis)
 # ============================
 def generate_summaries(clusters, vulnerable_methods):
+    logger.info("="*60)
+    logger.info("Starting summarization phase...")
+    logger.info("="*60)
     logger.info("Generating summaries for methods, classes, and clusters...")
     logger.info("Using ENHANCED summarizer with method call analysis...")
+    logger.info("⚠️  Loading LLaMA model - this may take several minutes...")
     summarizer = EnhancedLlamaSummarizer()
+    logger.info("✓ Model loaded successfully!")
     summaries = {"clusters": {}, "classes": {}, "methods": {}}
 
     # Generate cluster summaries (clusters now contain classes, not methods)
@@ -336,8 +341,15 @@ def main():
         return
 
     # NEW: Cluster classes instead of methods
+    logger.info("="*60)
+    logger.info("Starting semantic class clustering...")
+    logger.info("="*60)
     clusters, clusterer_obj = cluster_classes_semantically(parsed_files)
+    logger.info(f"Clustering completed. Generated {len(clusters)} clusters.")
 
+    logger.info("="*60)
+    logger.info("Identifying vulnerable methods from scan results...")
+    logger.info("="*60)
     vulnerable_methods = identify_vulnerable_methods(scan_results, parsed_files)
 
     summaries = {"clusters": {}, "classes": {}, "methods": {}}
