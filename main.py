@@ -48,10 +48,8 @@ def scan_with_mobsf(source_folder: str) -> dict:
 
     filtered = {"results": {}, "errors": []}
     for vuln_name, vuln_data in results.get("results", {}).items():
-        # Skip hardcoded_secret if you want only 15
-        if vuln_name == "hardcoded_secret":
-            continue
-        
+        # Only keep vulnerabilities that have Java file references
+        # (Skip vulnerabilities without files OR only XML/manifest files)
         java_files = [
             entry for entry in vuln_data.get("files", [])
             if entry.get("file_path", "").endswith(".java")
@@ -63,7 +61,14 @@ def scan_with_mobsf(source_folder: str) -> dict:
             }
 
     os.remove(temp_output)
-    logger.info(f"MobSF scan complete. Found {len(filtered['results'])} vulnerability types.")
+    logger.info(f"MobSF scan complete. Found {len(filtered['results'])} vulnerability types with Java files.")
+
+    # Log statistics
+    total_java_instances = sum(len(v["files"]) for v in filtered["results"].values())
+    logger.info(f"  - Total Java vulnerability instances: {total_java_instances}")
+    for vuln_name, vuln_data in filtered["results"].items():
+        logger.info(f"  - {vuln_name}: {len(vuln_data['files'])} instances")
+
     return filtered 
 
 # ============================
