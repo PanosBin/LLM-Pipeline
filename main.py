@@ -20,9 +20,12 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Use relative output directory that works on any system
-OUTPUT_DIR = os.path.join(os.getcwd(), "out")
+# Create timestamped output directory for each run
+from datetime import datetime
+timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+OUTPUT_DIR = os.path.join(os.getcwd(), f"out_{timestamp}")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
+logger.info(f"Output directory: {OUTPUT_DIR}")
 
 
 
@@ -31,19 +34,24 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 # ============================
 def scan_with_mobsf(source_folder: str) -> dict:
     logger.info(f"Running MobSF scan on: {source_folder}")
-    temp_output = os.path.join(OUTPUT_DIR, "mobsf_temp.json")
 
-    cmd = ["mobsfscan", "--json", "-o", temp_output, source_folder]
+    # Save MobSF output permanently (don't use temp file)
+    mobsf_raw_output = os.path.join(OUTPUT_DIR, "mobsf_raw_scan.json")
+
+    cmd = ["mobsfscan", "--json", "-o", mobsf_raw_output, source_folder]
     result = subprocess.run(cmd, capture_output=True, text=True)
-    
+
     if result.returncode != 0:
-        logger.warning(f"MobSF returned non-zero exit code {result.returncode}, continuing anyway...")
-    
-    if not os.path.exists(temp_output):
+        logger.warning(f"MobSF returned non-zero exit code {result.returncode}")
+        logger.warning("This is NORMAL when vulnerabilities are found - continuing...")
+
+    if not os.path.exists(mobsf_raw_output):
         logger.error("MobSF scan produced no output file")
         return {"results": {}, "errors": []}
 
-    with open(temp_output, "r") as f:
+    logger.info(f"✓ Raw MobSF results saved to: {mobsf_raw_output}")
+
+    with open(mobsf_raw_output, "r") as f:
         results = json.load(f)
 
     filtered = {"results": {}, "errors": []}
@@ -60,7 +68,7 @@ def scan_with_mobsf(source_folder: str) -> dict:
                 "metadata": vuln_data.get("metadata", {})
             }
 
-    os.remove(temp_output)
+    # Don't delete the raw output - we keep it for reference
     logger.info(f"MobSF scan complete. Found {len(filtered['results'])} vulnerability types with Java files.")
 
     # Log statistics
@@ -327,7 +335,16 @@ def main():
                         help="Path to existing MobSF scan JSON (if not scanning)")
     parser.add_argument("--no-summarize", action="store_true",
                         help="Skip summarization")
+    parser.add_argument("--output-name", type=str,
+                        help="Custom output directory name (default: timestamped)")
     args = parser.parse_args()
+
+    # Override output directory if custom name specified
+    global OUTPUT_DIR
+    if args.output_name:
+        OUTPUT_DIR = os.path.join(os.getcwd(), f"out_{args.output_name}")
+        os.makedirs(OUTPUT_DIR, exist_ok=True)
+        logger.info(f"Output directory: {OUTPUT_DIR}")
 
 
     # Scan or load
@@ -369,7 +386,18 @@ def main():
     logger.info("Generating final results.json...")
     final_results = generate_final_results(OUTPUT_DIR)
 
-    logger.info("Pipeline completed successfully.")
+    logger.info("="*60)
+    logger.info("Pipeline completed successfully!")
+    logger.info("="*60)
+    logger.info(f"All outputs saved to: {OUTPUT_DIR}")
+    logger.info("Output files:")
+    logger.info(f"  - mobsf_raw_scan.json   (raw MobSF output)")
+    logger.info(f"  - mobsf_scan.json       (filtered Java vulnerabilities)")
+    logger.info(f"  - parsed_files.json     (parsed Java classes/methods)")
+    logger.info(f"  - clusters.json         (semantic class clusters)")
+    logger.info(f"  - summaries.json        (LLM summaries)")
+    logger.info(f"  - results.json          (final vulnerability mappings)")
+    logger.info("="*60)
 
 if __name__ == "__main__":
     main()
