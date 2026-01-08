@@ -1,5 +1,6 @@
 # Core Pipeline Dependencies
 mobsfscan==0.3.8
+semgrep>=1.147.0  # Required for mobsfscan to detect Java code vulnerabilities
 
 # Parsing (Tree-sitter)
 tree-sitter>=0.21.0,<0.22.0

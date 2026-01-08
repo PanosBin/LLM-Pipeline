@@ -12,6 +12,7 @@ python = ">=3.11,<4.0"
 
 # === CORE PIPELINE DEPENDENCIES ===
 mobsfscan = "0.3.8"
+semgrep = "^1.147.0"  # Required for mobsfscan Java code analysis
 
 # Parsing (Tree-sitter is now the primary parser)
 tree-sitter = "^0.21.0"         # Main library

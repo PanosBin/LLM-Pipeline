@@ -20,7 +20,8 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-OUTPUT_DIR = "/Users/panagiotisbinikos/Desktop/CB_Thesis/code/CB_N/out"
+# Use relative output directory that works on any system
+OUTPUT_DIR = os.path.join(os.getcwd(), "out")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 
